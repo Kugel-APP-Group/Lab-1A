@@ -10,10 +10,10 @@ Vector2D p1,p2,p;
 double L1,L2,L;
 double E1,E2,E;
 double w1,w2;
-Vector2D s1(0.2,0),s2(0,0);
+Vector2D s1(0.15,0),s2(0,0);
 Vector2D v1(-1,0),v2(0,0);
 double k=100;
-const double dt=0.001;
+const double dt=0.01;
 void step(){
     Vector2D a1(0,0),a2(0,0);
     double alpha1=0,alpha2=0;
