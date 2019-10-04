@@ -57,7 +57,7 @@ void step(){
     w2+=alpha2*dt;
 }
 int main(){
-    freopen("//Users//kevinwan//Desktop//sim1.csv","w",stdout);
+    freopen("sim1.csv","w",stdout);
     printf("s1.x,s1.y,s2.x,s2.y,v1.x,v1.y,v2.x,v2.y,p1.x,p1.y,p2.x,p2.y,L1,L2,L,E1,E2,E\n");
     for(int i=0;i<10000;i++){
         step();
