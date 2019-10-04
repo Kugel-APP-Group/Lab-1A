@@ -2,7 +2,7 @@
 #include "Vector2D.cpp"
 using namespace std;
 const double eps=1e-9;
-double m1=0.02,m2=1000;
+double m1=0.02,m2=0.02;
 double r=0.05;
 double I1=0.4*m1*r*r,I2=0.4*m2*r*r;
 double u=0.5;
@@ -10,10 +10,10 @@ Vector2D p1,p2,p;
 double L1,L2,L;
 double E1,E2,E;
 double w1,w2;
-Vector2D s1(0.15,0),s2(0,0);
-Vector2D v1(-1,0),v2(0,0);
+Vector2D s1(0.05,0),s2(-0.05,0);
+Vector2D v1(-1,0),v2(1,0);
 double k=100;
-const double dt=0.01;
+const double dt=0.001;
 void step(){
     Vector2D a1(0,0),a2(0,0);
     double alpha1=0,alpha2=0;
